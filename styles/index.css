@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Moonrising';
+    src: url('../fonts/Moonrising.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('../images/background.jpg');
+
+    gap: 14px;
+    height: 100vh;
+}
+
+div.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 10px;
+
+    min-width: 300px;
+    max-width: 300px;
+
+    gap: 10px;
+
+    background-color: #000000cb;
+    border-radius: 5px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#input-values{
+    font-family: 'Moonrising';
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    color: #FFF;
+
+    padding: 5px;
+
+    width: 203px;
+    height: 52px;
+
+    background-color: #0000005b;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+}
+
+.input-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+}
+
+.btn-calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Moonrising';
+    font-size: 2em;
+
+    cursor: pointer;
+
+    background-color: #2c2c2cce;
+    border: 1px solid #FFF;
+    border-radius: 4px;
+
+    color: #FFF;
+
+    width: 64px;
+    height: 64px;
+}
+
+.btn-calculator.-second{
+    background-color: #bd4500;
+}
+
+.btn-calculator.-mult{
+    align-items: flex-end;
+}
+
+.btn-calculator:hover{
+    background-color: #222222;
+}
+
+.btn-calculator.-second:hover{
+    background-color: #ad4000ab;
+}
